@@ -1,0 +1,14 @@
+{
+ :max-fragment-length 42
+ :tags {"A" "ATCG" "B" "AAAA" "C" "CCCC"}
+
+ }
+
+(
+  (
+    (
+      ({:fragment "TATGCCGGCTGCGGAAACTA",
+         :tag {:id "B", :tag "ACTA", :locations [16 61], :used? false}, :start 0, :end 20} ())
+      ({:fragment "TATGCCGGCTGCGGAAACTA", :tag {:id "B", :tag "ACTA", :locations [16 61], :used? false}, :start 0, :end 20} (({:fragment "GCCCCGAGTTTTGAAACCTG", :tag {:id "D", :tag "CCTG", :locations [36], :used? false}, :start 20, :end 40} ())))
+
+      ) (({:fragment "TATGCCGGCTGCGGAAACTAGCCCCGAGTTTTGAAACCTGGAACGTCGCAAGCTGATGACCACTA", :tag {:id "B", :tag "ACTA", :locations [16 61], :used? false}, :start 0, :end 65} ()))) (()) ((({:fragment "TATGCCGGCTGCGGAAACTAGCCCCGAGTTTTGAAACCTG", :tag {:id "D", :tag "CCTG", :locations [36], :used? false}, :start 0, :end 40} (({:fragment "GAACGTCGCAAGCTGATGACCACTA", :tag {:id "B", :tag "ACTA", :locations [16 61], :used? false}, :start 40, :end 65} ()))) ({:fragment "TATGCCGGCTGCGGAAACTAGCCCCGAGTTTTGAAACCTG", :tag {:id "D", :tag "CCTG", :locations [36], :used? false}, :start 0, :end 40} ())))) (using =)
