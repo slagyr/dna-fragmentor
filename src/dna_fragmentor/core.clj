@@ -83,11 +83,12 @@
 (defn find-solutions [config]
   (let [sequence (:sequence config)
         _ (log "Sequence:\n " sequence "\n")
+        max-fragment-length (:max-fragment-length config)
+        _ (log "Max Fragment Length: " max-fragment-length "\n")
         config (compile-tags config)
         tags (vals (:tags config))
         tags-locations (expand-tags-locations tags)
         sequence-length (.length sequence)
-        max-fragment-length (:max-fragment-length config)
         min-tags (dec (int (+ 0.99999 (/ sequence-length (double max-fragment-length)))))
         perms (combinatorics/permutations tags-locations)
         products (mapcat #(apply combinatorics/cartesian-product %) perms)
@@ -105,5 +106,6 @@
 
 (defn -main
   [& args]
-  (println "Hello World"))
+  (let [config (load-config (first args))]
+    (find-solutions config)))
 

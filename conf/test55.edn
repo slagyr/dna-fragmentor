@@ -1,6 +1,6 @@
 {
  :sequence            "TATGCCGGCTGCGGAAACTAGCCCCGAGTTTTGAAACCTGGAACGTCGCAAGCTGATGACCACTAGGTGTTAGCGAACATGCGGCGGCGGCGGTGGGTAAAGAACGTTAACCAA"
- :max-fragment-length 42
+ :max-fragment-length 55
  :tags                {"A" "AGAA"
                        "B" "ACTA"
                        "C" "GATT"
