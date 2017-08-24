@@ -80,15 +80,29 @@
                             [[(+ 4 (:location last)) (.length sequence) ""]])]
       (map (fn [[s e t]] (str (subs sequence s e) t)) fragments))))
 
+(defn check-sufficient-tags-found [sequence-length max-fragment-length tags-locations]
+  (prn "tags-locations: " tags-locations)
+  (let [found-tags (->> tags-locations
+                        (map second)
+                        (map :locations)
+                        (map seq)
+                        (remove nil?)
+                        count)
+        required-fragment-length (int (+ 0.999 (/ sequence-length found-tags)))]
+    (when (> required-fragment-length max-fragment-length)
+      (throw (ex-info "Insufficient tags found" {:found-tags found-tags
+                                                 :required-fragment-length required-fragment-length})))))
+
 (defn find-solutions [config]
   (let [sequence (:sequence config)
-        _ (log "Sequence:\n " sequence "\n")
+        sequence-length (.length sequence)
+        _ (log "Sequence: " sequence-length " bp\n" sequence "\n")
         max-fragment-length (:max-fragment-length config)
         _ (log "Max Fragment Length: " max-fragment-length "\n")
         config (compile-tags config)
+        _ (check-sufficient-tags-found sequence-length max-fragment-length (:tags config))
         tags (vals (:tags config))
         tags-locations (expand-tags-locations tags)
-        sequence-length (.length sequence)
         min-tags (dec (int (+ 0.99999 (/ sequence-length (double max-fragment-length)))))
         perms (combinatorics/permutations tags-locations)
         products (mapcat #(apply combinatorics/cartesian-product %) perms)
