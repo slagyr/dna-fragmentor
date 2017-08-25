@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40f9cb41-8d99-49f9-a4d7-7caa4e50a9d3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/conf/real172.edn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/real172.edn" afterPath="$PROJECT_DIR$/conf/real172.edn" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dna_fragmentor/core.clj" afterPath="$PROJECT_DIR$/src/dna_fragmentor/core.clj" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -88,8 +87,8 @@
           <file leaf-file-name="core.clj" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/dna_fragmentor/core.clj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="407">
-                  <caret line="89" column="29" lean-forward="false" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
+                <state relative-caret-position="636">
+                  <caret line="110" column="47" lean-forward="true" selection-start-line="110" selection-start-column="47" selection-end-line="110" selection-end-column="47" />
                   <folding />
                 </state>
               </provider>
@@ -98,8 +97,8 @@
           <file leaf-file-name="real172.edn" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/conf/real172.edn">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+                <state relative-caret-position="45">
+                  <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
                   <folding />
                 </state>
               </provider>
@@ -119,6 +118,12 @@
       </split-second>
     </splitter>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>populate-locations</find>
+      <find>ACT</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -130,8 +135,8 @@
         <option value="$PROJECT_DIR$/spec/test-config.edn" />
         <option value="$PROJECT_DIR$/test55.edn" />
         <option value="$PROJECT_DIR$/conf/test40.edn" />
-        <option value="$PROJECT_DIR$/conf/real172.edn" />
         <option value="$PROJECT_DIR$/conf/test172.edn" />
+        <option value="$PROJECT_DIR$/conf/real172.edn" />
         <option value="$PROJECT_DIR$/src/dna_fragmentor/core.clj" />
       </list>
     </option>
@@ -541,12 +546,12 @@
       <workItem from="1503016347396" duration="124000" />
       <workItem from="1503016497071" duration="282000" />
       <workItem from="1503016878495" duration="89000" />
-      <workItem from="1503016996583" duration="38240000" />
+      <workItem from="1503016996583" duration="39870000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38993000" />
+    <option name="totallyTimeSpent" value="40623000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1413" extended-state="0" />
@@ -671,14 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/real172.edn">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conf/test172.edn">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -687,10 +684,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/conf/real172.edn">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/dna_fragmentor/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="89" column="29" lean-forward="false" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
+        <state relative-caret-position="636">
+          <caret line="110" column="47" lean-forward="true" selection-start-line="110" selection-start-column="47" selection-end-line="110" selection-end-column="47" />
           <folding />
         </state>
       </provider>

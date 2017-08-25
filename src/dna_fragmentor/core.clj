@@ -81,7 +81,6 @@
       (map (fn [[s e t]] (str (subs sequence s e) t)) fragments))))
 
 (defn check-sufficient-tags-found [sequence-length max-fragment-length tags-locations]
-  (prn "tags-locations: " tags-locations)
   (let [found-tags (->> tags-locations
                         (map second)
                         (map :locations)
@@ -107,7 +106,7 @@
         perms (combinatorics/permutations tags-locations)
         products (mapcat #(apply combinatorics/cartesian-product %) perms)
         possible-solutions (set (shortcuts products (count tags) min-tags))
-        _ (log "\nPossible solutions: " (count possible-solutions))
+        ;_ (log "\nPossible solutions: " (count possible-solutions))
         solutions (filter (partial fragment-lengths-ok? max-fragment-length sequence-length) possible-solutions)]
     (log "Valid solutions: " (count solutions))
     (let [sol-strings (map #(resolve-fragment sequence (:tags config) %) solutions)]
