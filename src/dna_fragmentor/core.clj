@@ -105,9 +105,9 @@
         min-tags (dec (int (+ 0.99999 (/ sequence-length (double max-fragment-length)))))
         perms (combinatorics/permutations tags-locations)
         products (mapcat #(apply combinatorics/cartesian-product %) perms)
-        possible-solutions (set (shortcuts products (count tags) min-tags))
+        possible-solutions (shortcuts products (count tags) min-tags)
         ;_ (log "\nPossible solutions: " (count possible-solutions))
-        solutions (filter (partial fragment-lengths-ok? max-fragment-length sequence-length) possible-solutions)]
+        solutions (set (filter (partial fragment-lengths-ok? max-fragment-length sequence-length) possible-solutions))]
     (log "Valid solutions: " (count solutions))
     (let [sol-strings (map #(resolve-fragment sequence (:tags config) %) solutions)]
       (doseq [[n sol] (partition 2 (interleave (range) sol-strings))]
